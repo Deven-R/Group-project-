@@ -1,0 +1,17 @@
+ This package contains a canvas class that responds to the tools.
+        The canvas class is simply a JPanel that reacts to what ever the event/action listener package does.
+        It is a link between the tools, actionListener and overall window class.
+        Dependency(Modification Risk: 50%):
+            there wont be severe changes here because it serves as a mirror to other classes change.
+            However, major here can affect the window class(minor: canvas section of the window class may not work),
+             MouseEventFrame: (Major: This is the correlation between the mouse events, the actionListeners and the tools)
+             Tools: Minor
+             Listener: Minor: this changes the state of the tools selected
+
+        The Line class records the positioning of the mouse and changes the color of the pencil
+        Dependency(Modification Risk: 70%) ---  Consult with other members before making drastic change:
+                Tools not associated with images directly are affected by this.
+
+        The MouseEventFrame class serves as a link between the tools selected and the action performed (ActionListener)
+        Dependency( modification Risk: 30%) ---  Extend this class if you wish to perform other actions
+                I will modify this to be an interface instead

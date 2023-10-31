@@ -1,0 +1,10 @@
+The main tool you want to develop implements the tool interface cause i believed that all tools at one point
+interact with the canvas. You can add extra methods but make sure to include those methods in the interface as well.
+
+The paint component handles the kind of work each tool is required to do. so the tool.current tool will determine
+the part of the paint component to utilize. See PaintComponent for what i mean.
+            Problem with this is how to keep the canvas from repainting each time a new tool is selected.
+
+canvas is where the main work of the tool is done and the repaint method is called. Study pencil tool to see
+Actionlistener is just a link between the icon, and the setting of the current tool to the tool selected. Once you
+set the current tool to the tool clicked, make sure to deselect the other tools as well.

@@ -62,21 +62,6 @@ HOW TO RUN THE PROGRAM:
 - Open the project on an IDE that supports Java code.
 - Compile and run the program via the Demo clas, within the Main Package (Main.Demo.Java).
 
-How to run on a terminal:
-
-Open a terminal, navigate to where the file is stored and open the scc210-2223-grp-41 2 directory and type or copy and paste
-this
-javac -classpath ButtonListener:Canvas:Files:GUI:Image:Main:Tools:Tutorial/gui:UndoManager -d bin -Xlint:unchecked ButtonListener/*.java Canvas/*.java Files/*.java GUI/*.java Image/*.java Tools/*.java Tutorial/gui/*.java Main/*.java
-
-Followed by this
-javac Main/Demo.java
-
-
-Then lastly this
-java Main/Demo
-
-to open and run the entire program.
-
 ## Usage
 
 To support users during usage of the program, we've includd a tutorial built-in the program. This should be utilised as detailed user instructions.
